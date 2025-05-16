@@ -22,20 +22,35 @@ Test Cases - Overview
 Test Case 1.1: Valid Currency Exchange (USD to EUR)
 
 Test Case 1.2: Valid Currency Exchange (BTC to USD)
+
 Test Case 1.3: Valid Currency Exchange (BTC to DOGE)
+
 Test Case 2.1: Invalid from_currency Code
+
 Test Case 2.2: Invalid to_currency Code
+
 Test Case 2.3: Invalid from_currency and to_currency Code
+
 Test Case 3.1: Missing from_currency Parameter
+
 Test Case 3.2: Missing to_currency Parameter
+
 Test Case 3.3: Missing both from_currency and to_currency Parameter
+
 Test Case 4.1: Same from_currency and to_currency
+
 Test Case 5.1: Case sensitivty of Currency Codes (lower)
+
 Test Case 5.2: Case sensitivty of Currency Codes (Miexed Caser)
+
 Test Case 6.1: Invalid API Key
+
 Test Case 6.2: Demo API Key
+
 Test Case 6.3: Missing API Key
+
 Test Case 7.1: Rate limiting
+
 
 
 Automated: Test Case 1.1, 6.3
