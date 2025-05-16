@@ -95,8 +95,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 1.2: Valid Currency Exchange (BTC to USD)
 Test Case ID: CER-002
@@ -122,8 +125,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 1.3: Valid Currency Exchange (BTC to DOGE)
 Test Case ID: CER-003
@@ -149,8 +155,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 2.1: Invalid from_currency Code
 Test Case ID: CER-004
@@ -171,8 +180,11 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 2.2: Invalid to_currency Code
 Test Case ID: CER-005
@@ -193,8 +205,11 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 2.3: Invalid from_currency and to_currency Code
 Test Case ID: CER-006
@@ -215,8 +230,11 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
+
 
 
 ### Test Case 3.1: Missing from_currency Parameter
@@ -238,8 +256,11 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 3.2: Missing to_currency Parameter
 Test Case ID: CER-008
@@ -260,8 +281,11 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
+
 
 ### Test Case 3.3: Missing both from_currency and to_currency Parameter
 Test Case ID: CER-009
@@ -282,7 +306,9 @@ the field "Error Message" with the content "Invalid API call.
 Please retry or visit the documentation 
 (https://www.alphavantage.co/documentation/) for CURRENCY_EXCHANGE_RATE."
 
+
 Actual Result:
+
 Pass/Fail:
 
 ### Test Case 4.1: Same from_currency and to_currency
@@ -309,8 +335,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 
 ### Test Case 5.1: Case sensitivty of Currency Codes (lower)
@@ -337,8 +366,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 
 ### Test Case 5.2: Case sensitivty of Currency Codes (Miexed Caser)
@@ -365,8 +397,11 @@ Expected Result:
         "Bid Price",  
         "Ask Price". 
         The status code should be 200 OK.
+
 Actual Result:
+
 Pass/Fail:
+
 
 
 ### Test Case 6.1: Invalid API Key
@@ -412,7 +447,9 @@ Expected Result:
     offerings. It takes fewer than 20 seconds."
     The status code should be 200 OK.
 
+
 Actual Result:
+
 Pass/Fail:
 
 ### Test Case 6.3: Missing API Key
@@ -436,6 +473,7 @@ Expected Result:
     The status code should be 200 OK.
 
 Actual Result:
+
 Pass/Fail:
 
 ### Test Case 7.1: Rate limiting
@@ -463,5 +501,8 @@ Expected Result:
 }
     The status code should be 200 OK.
 
+
 Actual Result:
+
 Pass/Fail:
+
