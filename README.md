@@ -1,4 +1,4 @@
-#Manual Test Cases: Alpha Vantage currency_exchange_rate Endpoint
+# Manual Test Cases: Alpha Vantage currency_exchange_rate Endpoint
 
 Goal: Verify API, that includes data formatting and ranges.
 Non-Goal: Verifying the internal API logic
@@ -18,7 +18,7 @@ Personas used for testing:
 Endpoint: https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency={FROM_CURRENCY}&to_currency={TO_CURRENCY}&apikey={YOUR_API_KEY}
 
 
-Test Cases - Overview
+# Test Cases - Overview
 
 Test Case 1.1: Valid Currency Exchange (USD to EUR)
 
@@ -69,7 +69,7 @@ run:
 Check terminal output and test results written to /results/report.html
 
 
-Manual Test Cases - detailed
+# Manual Test Cases - detailed
 
 Test Case 1.1: Valid Currency Exchange (USD to EUR)
 Test Case ID: CER-001

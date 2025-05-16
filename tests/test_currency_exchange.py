@@ -1,6 +1,6 @@
 """ tests/test_currency_exchange.py
 
-    Tests for the Currency Exchange Endpount.
+    Tests for the Currency Exchange Endpoint.
 
     To add more coverage, parameterized tests can be generated to cover more
     permutations of test input parameter.
