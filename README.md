@@ -43,18 +43,16 @@ Automated: Test Case 1.1, 6.3
 How to run the automated test
 Make sure Python is installed and configured. Otherwise install Python
 Install required Python modules via PIP if needed:
->> pip install pytest pytest-mock requests pytest-html
+> pip install pytest pytest-mock requests pytest-html
 
 Navigatre into the root directory (where this file is located)
 run:
->> pytest
+> pytest
 
 Check terminal output and test results written to /results/report.html
 
 
-
-
-Test Cases - detailed
+Manual Test Cases - detailed
 
 Test Case 1.1: Valid Currency Exchange (USD to EUR)
 Test Case ID: CER-001
@@ -63,10 +61,10 @@ Description: Verify that a valid exchange rate is returned for a standard
 physical currency pair (USD to EUR).
 
 Steps:
-    1. Construct the API request URL with from_currency=USD, to_currency=EUR
-       and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=USD, to_currency=EUR
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -90,10 +88,10 @@ Description: Verify that a valid exchange rate is returned for a digital and
 physical currency pair (BTC to USD).
 
 Steps:
-    1. Construct the API request URL with from_currency=BTC, to_currency=USD
+1. Construct the API request URL with from_currency=BTC, to_currency=USD
        and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -117,10 +115,10 @@ Description: Verify that a valid exchange rate is returned for a digital
 currency pair (BTC to DOGE).
 
 Steps:
-    1. Construct the API request URL with from_currency=BTC, to_currency=DOGE
-       and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=BTC, to_currency=DOGE
+    and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -144,11 +142,11 @@ Description: Verify that an appropriate error is returned when an invalid
 from_currency code is provided.
 
 Steps:
-    1.  Construct the API request URL with an invalid from_currency
-    (e.g., from_currency=XYZ), a valid to_currency (e.g., to_currency=USD), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with an invalid from_currency
+(e.g., from_currency=XYZ), a valid to_currency (e.g., to_currency=USD), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -166,11 +164,11 @@ Description: Verify that an appropriate error is returned when an invalid
 to_currency code is provided.
 
 Steps:
-    1.  Construct the API request URL with a valid from_currency
-    (e.g., from_currency=USD), and an invalid to_currency (e.g., to_currency=XYZ), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with a valid from_currency
+(e.g., from_currency=USD), and an invalid to_currency (e.g., to_currency=XYZ), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -188,11 +186,11 @@ Description: Verify that an appropriate error is returned when an invalid
 from_currency and an invalid to_currency code is provided.
 
 Steps:
-    1.  Construct the API request URL with an invalid from_currency
-    (e.g., from_currency=XYZ), and an invalid to_currency (e.g., to_currency=ZYX), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with an invalid from_currency
+(e.g., from_currency=XYZ), and an invalid to_currency (e.g., to_currency=ZYX), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -211,11 +209,11 @@ Description: Verify that an appropriate error is returned when a missing
 from_currency is provided.
 
 Steps:
-    1.  Construct the API request URL with an empty from_currency
-    (e.g., from_currency=""), and a valid to_currency (e.g., to_currency=USD), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with an empty from_currency
+(e.g., from_currency=""), and a valid to_currency (e.g., to_currency=USD), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -233,11 +231,11 @@ Description: Verify that an appropriate error is returned when a missing
 to_currency is provided.
 
 Steps:
-    1.  Construct the API request URL with a vaild from_currency
-    (e.g., from_currency=USD), and an empty to_currency (e.g., to_currency=""), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with a vaild from_currency
+(e.g., from_currency=USD), and an empty to_currency (e.g., to_currency=""), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -255,11 +253,11 @@ Description: Verify that an appropriate error is returned when a missing
 to_currency is provided.
 
 Steps:
-    1.  Construct the API request URL with an empty from_currency
-    (e.g., from_currency=""), and an empty to_currency (e.g., to_currency=""), 
-    and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1.  Construct the API request URL with an empty from_currency
+(e.g., from_currency=""), and an empty to_currency (e.g., to_currency=""), 
+and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
 The API should return a JSON response containing the error message, including 
@@ -277,10 +275,10 @@ Description: Verify that a valid exchange rate is returned when valid
 currency codes are provided (EUR to EUR).
 
 Steps:
-    1. Construct the API request URL with from_currency=EUR, to_currency=EUR
-       and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=EUR, to_currency=EUR
+    and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -305,10 +303,10 @@ Description: Verify that a valid exchange rate is returned when lowercase
 currency codes are provided (usd to eur).
 
 Steps:
-    1. Construct the API request URL with from_currency=usd, to_currency=eur
-       and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=usd, to_currency=eur
+    and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -333,10 +331,10 @@ Description: Verify that a valid exchange rate is returned when lowercase
 currency code is paired with a capitalized currency code are provided (usd to EUR).
 
 Steps:
-    1. Construct the API request URL with from_currency=usd, to_currency=EUR
-       and a valid apikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=usd, to_currency=EUR
+    and a valid apikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a JSON response containing the exchange rate
@@ -361,10 +359,10 @@ Description: Verify that an appropriate error is returned when an invalid API
 key is provided.
 
 Steps:
-    1. Construct the API request URL with from_currency=USD, to_currency=EUR
-       and an invalid apikey=invalidtestapikey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=USD, to_currency=EUR
+    and an invalid apikey=invalidtestapikey.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a message indicating the use of an invalid key.
@@ -384,10 +382,10 @@ Description: Verify that an appropriate information is returned when the 'demo'
 API key is provided.
 
 Steps:
-    1. Construct the API request URL with from_currency=USD, to_currency=EUR
-       and an invalid apikey=demo.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=USD, to_currency=EUR
+    and an invalid apikey=demo.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return a message of type informaion with the following fields
@@ -407,10 +405,10 @@ Description: Verify that an appropriate error is returned when no
 API key is provided.
 
 Steps:
-    1. Construct the API request URL with from_currency=USD, to_currency=EUR
-       and an invalid apikey=.
-    2. Send the request to the endpoint.
-    3. Observe the response.
+1. Construct the API request URL with from_currency=USD, to_currency=EUR
+    and an invalid apikey=.
+2. Send the request to the endpoint.
+3. Observe the response.
 
 Expected Result: 
     The API should return an error message with the following fields
@@ -430,12 +428,12 @@ Description: Observe the behavior when multiple requests are made,
 check for limiting
 
 Steps:
-    0. Generate a new key
-    1. Construct the API request URL with from_currency=USD, to_currency=EUR
-       and an invalid apikey=newKey.
-    2. Send the request to the endpoint.
-    3. Observe the response.
-    4. Repeat steps 2 and 3 for 25 times.
+0. Generate a new key
+1. Construct the API request URL with from_currency=USD, to_currency=EUR
+    and an invalid apikey=newKey.
+2. Send the request to the endpoint.
+3. Observe the response.
+4. Repeat steps 2 and 3 for 25 times.
 
 Expected Result: 
     The API should return an error message with the following fields
