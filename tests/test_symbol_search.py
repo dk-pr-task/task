@@ -1,14 +1,20 @@
-# tests/test_symbol_search.py
+""" tests/test_symbol_search.py
+    
+    Tests for the AlphaVantageClient symbol search endpoint.
 
+    TODO(bugID): Refactor for using API mocking tool.
+
+"""
+
+from unittest.mock import patch, Mock
 import pytest
 import requests
 
-from unittest.mock import patch, Mock
 from client.alpha_vantage_client import AlphaVantageClient
 
 
 class TestSymbolSearchEndpoint:
-    """Tests for the AlphaVantageClient symbol search endpoint."""
+    """Test class for the AlphaVantageClient symbol search endpoint."""
 
     @patch('client.alpha_vantage_client.requests.get')
     def test_get_symbol_search_success_multiple_matches(self, mock_get, client):
@@ -132,7 +138,7 @@ class TestSymbolSearchEndpoint:
         """
         mock_response = Mock()
         error_data = {
-            "Error Message": 
+            "Error Message":
             "The demo API key is invalid. Please claim your free API key."
         }
         mock_response.json.return_value = error_data
@@ -147,7 +153,7 @@ class TestSymbolSearchEndpoint:
             client.get_symbol_search_response("AnyKeyword")
 
     @patch('client.alpha_vantage_client.requests.get')
-    def test_get_symbol_search_information_message_as_error(self, 
+    def test_get_symbol_search_information_message_as_error(self,
                                                             mock_get, client):
         """Test handling of an "Information" message that indicates a problem.
 
@@ -172,7 +178,7 @@ class TestSymbolSearchEndpoint:
         # need adjustment. For now, assuming it raises ValueError for a lone
         # "Information" message.
         with pytest.raises(
-            ValueError, 
+            ValueError,
             match="Alpha Vantage API Info: Thank you for using Alpha Vantage!"
         ):
             client.get_symbol_search_response("AnyKeyword")

@@ -11,10 +11,10 @@
 
     TODO(bugID): Refactor for using API mocking tool.
 """
-import pytest
-import requests
 
 from unittest.mock import patch, Mock
+import pytest
+import requests
 from client.alpha_vantage_client import AlphaVantageClient
 
 
@@ -152,8 +152,7 @@ class TestCurrencyExchangeRate:
 
         with pytest.raises(
             ValueError,
-            match=
-                "Unexpected response structure for CURRENCY_EXCHANGE_RATE."
+            match="Unexpected response structure for CURRENCY_EXCHANGE_RATE."
         ):
             client.get_currency_exchange_rate_response("USD", "EUR")
 

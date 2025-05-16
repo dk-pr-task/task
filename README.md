@@ -1,4 +1,4 @@
-Manual Test Cases: Alpha Vantage currency_exchange_rate Endpoint
+#Manual Test Cases: Alpha Vantage currency_exchange_rate Endpoint
 
 Goal: Verify API, that includes data formatting and ranges.
 Non-Goal: Verifying the internal API logic
