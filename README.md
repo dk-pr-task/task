@@ -445,6 +445,7 @@ Description: Observe the behavior when multiple requests are made,
 check for limiting
 
 Steps:
+
 0. Generate a new key
 1. Construct the API request URL with from_currency=USD, to_currency=EUR
     and an invalid apikey=newKey.
