@@ -20,6 +20,7 @@ Endpoint: https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from
 
 Test Cases - Overview
 Test Case 1.1: Valid Currency Exchange (USD to EUR)
+
 Test Case 1.2: Valid Currency Exchange (BTC to USD)
 Test Case 1.3: Valid Currency Exchange (BTC to DOGE)
 Test Case 2.1: Invalid from_currency Code
