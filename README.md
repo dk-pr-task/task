@@ -15,7 +15,7 @@ Personas used for testing:
     2. Premium_API_user
 
 
-Endpoint: https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency={FROM_CURRENCY}&to_currency={TO_CURRENCY}&apikey={YOUR_API_KEY}
+## Endpoint: https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency={FROM_CURRENCY}&to_currency={TO_CURRENCY}&apikey={YOUR_API_KEY}
 
 
 # Test Cases - Overview
@@ -57,7 +57,7 @@ Test Case 7.1: Rate limiting
 Automated: Test Case 1.1, 6.3
 
 
-How to run the automated test
+## How to run the automated test
 Make sure Python is installed and configured. Otherwise install Python
 Install required Python modules via PIP if needed:
 > pip install pytest pytest-mock requests pytest-html
@@ -71,7 +71,7 @@ Check terminal output and test results written to /results/report.html
 
 # Manual Test Cases - detailed
 
-Test Case 1.1: Valid Currency Exchange (USD to EUR)
+### Test Case 1.1: Valid Currency Exchange (USD to EUR)
 Test Case ID: CER-001
 
 Description: Verify that a valid exchange rate is returned for a standard
@@ -98,7 +98,7 @@ Expected Result:
 Actual Result:
 Pass/Fail:
 
-Test Case 1.2: Valid Currency Exchange (BTC to USD)
+### Test Case 1.2: Valid Currency Exchange (BTC to USD)
 Test Case ID: CER-002
 
 Description: Verify that a valid exchange rate is returned for a digital and 
@@ -125,7 +125,7 @@ Expected Result:
 Actual Result:
 Pass/Fail:
 
-Test Case 1.3: Valid Currency Exchange (BTC to DOGE)
+### Test Case 1.3: Valid Currency Exchange (BTC to DOGE)
 Test Case ID: CER-003
 
 Description: Verify that a valid exchange rate is returned for a digital
@@ -152,7 +152,7 @@ Expected Result:
 Actual Result:
 Pass/Fail:
 
-Test Case 2.1: Invalid from_currency Code
+### Test Case 2.1: Invalid from_currency Code
 Test Case ID: CER-004
 
 Description: Verify that an appropriate error is returned when an invalid 
@@ -174,7 +174,7 @@ Please retry or visit the documentation
 Actual Result:
 Pass/Fail:
 
-Test Case 2.2: Invalid to_currency Code
+### Test Case 2.2: Invalid to_currency Code
 Test Case ID: CER-005
 
 Description: Verify that an appropriate error is returned when an invalid 
@@ -196,7 +196,7 @@ Please retry or visit the documentation
 Actual Result:
 Pass/Fail:
 
-Test Case 2.3: Invalid from_currency and to_currency Code
+### Test Case 2.3: Invalid from_currency and to_currency Code
 Test Case ID: CER-006
 
 Description: Verify that an appropriate error is returned when an invalid 
@@ -219,7 +219,7 @@ Actual Result:
 Pass/Fail:
 
 
-Test Case 3.1: Missing from_currency Parameter
+### Test Case 3.1: Missing from_currency Parameter
 Test Case ID: CER-007
 
 Description: Verify that an appropriate error is returned when a missing 
@@ -241,7 +241,7 @@ Please retry or visit the documentation
 Actual Result:
 Pass/Fail:
 
-Test Case 3.2: Missing to_currency Parameter
+### Test Case 3.2: Missing to_currency Parameter
 Test Case ID: CER-008
 
 Description: Verify that an appropriate error is returned when a missing 
@@ -263,7 +263,7 @@ Please retry or visit the documentation
 Actual Result:
 Pass/Fail:
 
-Test Case 3.3: Missing both from_currency and to_currency Parameter
+### Test Case 3.3: Missing both from_currency and to_currency Parameter
 Test Case ID: CER-009
 
 Description: Verify that an appropriate error is returned when a missing 
@@ -285,7 +285,7 @@ Please retry or visit the documentation
 Actual Result:
 Pass/Fail:
 
-Test Case 4.1: Same from_currency and to_currency
+### Test Case 4.1: Same from_currency and to_currency
 Test Case ID: CER-010
 
 Description: Verify that a valid exchange rate is returned when valid 
@@ -313,7 +313,7 @@ Actual Result:
 Pass/Fail:
 
 
-Test Case 5.1: Case sensitivty of Currency Codes (lower)
+### Test Case 5.1: Case sensitivty of Currency Codes (lower)
 Test Case ID: CER-0011
 
 Description: Verify that a valid exchange rate is returned when lowercase 
@@ -341,7 +341,7 @@ Actual Result:
 Pass/Fail:
 
 
-Test Case 5.2: Case sensitivty of Currency Codes (Miexed Caser)
+### Test Case 5.2: Case sensitivty of Currency Codes (Miexed Caser)
 Test Case ID: CER-0012
 
 Description: Verify that a valid exchange rate is returned when lowercase 
@@ -369,7 +369,7 @@ Actual Result:
 Pass/Fail:
 
 
-Test Case 6.1: Invalid API Key
+### Test Case 6.1: Invalid API Key
 Test Case ID: CER-0013
 
 Description: Verify that an appropriate error is returned when an invalid API 
@@ -392,7 +392,7 @@ Pass/Fail:
     Fail
 
     
-Test Case 6.2: Demo API Key
+### Test Case 6.2: Demo API Key
 Test Case ID: CER-0014
 
 Description: Verify that an appropriate information is returned when the 'demo'
@@ -415,7 +415,7 @@ Expected Result:
 Actual Result:
 Pass/Fail:
 
-Test Case 6.3: Missing API Key
+### Test Case 6.3: Missing API Key
 Test Case ID: CER-0015
 
 Description: Verify that an appropriate error is returned when no
@@ -438,7 +438,7 @@ Expected Result:
 Actual Result:
 Pass/Fail:
 
-Test Case 7.1: Rate limiting
+### Test Case 7.1: Rate limiting
 Test Case ID: CER-0016
 
 Description: Observe the behavior when multiple requests are made, 
